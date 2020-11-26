@@ -4,5 +4,14 @@
  * @returns {number}
  */
 function factorial(n) {
-  // ваш код...
+	let  factorial = 1;
+
+	if (n != 0){
+	  	do {
+	  		factorial = factorial * n;
+	  		n--;
+	  	} while (n > 1);
+  	}
+
+  	return factorial;
 }

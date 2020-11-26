@@ -4,5 +4,16 @@
  * @returns {Boolean}
  */
 function isEmpty(obj) {
-  // ваш код...
+    var result = true;
+
+    if (typeof obj == 'object') {
+        for (let key in obj){
+            if (typeof key != 'undefined') {
+                result = false;
+                break;
+            }
+        }
+    }
+
+    return result;
 }
