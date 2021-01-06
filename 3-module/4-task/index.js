@@ -5,5 +5,15 @@
  * @returns {string}
  */
 function showSalary(users, age) {
-  // ваш код...
+
+	let filterUsers = users.filter(item => item.age <= age),
+		resultArr = [];
+
+	filterUsers.forEach(function (item, index, array){
+		resultArr.push(`${item.name}, ${item.balance}`);
+	});
+	
+	let resultStr = resultArr.join('\n');
+
+	return resultStr
 }

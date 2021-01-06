@@ -3,5 +3,14 @@
  * @returns {string[]}  объект
  */
 function namify(users) {
-  // ваш код...
+  // ваш коду...
+    let userName = [];
+
+  	users.forEach((item, index, array) => {
+	   (item.name) ? userName.push(item.name) : ''
+	});
+
+	//let lengths = users.map(item => item.name); //отработает некорректно если свойства name в объекте нет
+
+  return userName;
 }
